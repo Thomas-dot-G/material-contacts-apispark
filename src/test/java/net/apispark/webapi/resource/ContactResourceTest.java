@@ -31,7 +31,7 @@ public class ContactResourceTest {
         assertThat(persistentContact.getId(), is(notNullValue()));
         assertThat(persistentContact.getFirstName(), is("John"));
         assertThat(persistentContact.getLastName(), is("Smith"));
-        assertThat(persistentContact.getGender(), is(Gender.MAN));
+        assertThat(persistentContact.getGender(), is(Gender.WOMAN));
     }
 
     @Test
