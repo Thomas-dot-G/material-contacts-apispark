@@ -3,3 +3,8 @@ language: java
 
 #build software 
 script: mvn test
+
+deploy:
+  provider: heroku
+  app: apispark-thomasg 
+  api_key: "ba28d18e-7f53-44b3-8010-ca90532d81ac"
