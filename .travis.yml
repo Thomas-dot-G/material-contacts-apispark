@@ -3,6 +3,7 @@ language: java
 
 #build software 
 script: mvn test
+script: mvn package
 
 deploy:
   provider: heroku
