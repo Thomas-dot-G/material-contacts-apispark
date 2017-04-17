@@ -39,7 +39,7 @@ public class ContactResourceTest {
         // given a added contact
         Contact contact = new Contact();
         contact.setFirstName("Sam");
-        contact.setLastName("Sung");
+        contact.setLastName("Sungh");
         contact.setGender(Gender.MAN);
         Contact persistentContact = ContactPersistence.INSTANCE.addContact(contact);
         String contactId = persistentContact.getId();
@@ -51,7 +51,7 @@ public class ContactResourceTest {
         assertThat(retrievedContact, is(notNullValue()));
         assertThat(retrievedContact.getId(), is(contactId));
         assertThat(persistentContact.getFirstName(), is("Sam"));
-        assertThat(persistentContact.getLastName(), is("Sung"));
+        assertThat(persistentContact.getLastName(), is("Sungh"));
         assertThat(persistentContact.getGender(), is(Gender.MAN));
     }
 }
